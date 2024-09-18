@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+.header {
+    background-color: #595aa1; 
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+.Contenu {
+    background-color:yellow;
+    padding: 20px;
+    text-align: center;
+    height: 750px;
+   
+  }
+  
+.footer {
+    background-color: #51c4d8; 
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
