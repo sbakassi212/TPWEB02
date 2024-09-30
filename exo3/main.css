@@ -1,69 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: sans-serif;
-  }
+  font-family: Arial, sans-serif;
+}
 
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 10% 1fr 10%;
-    grid-template-areas:
+.container {
+  display: grid;
+  grid-template-areas: 
       "bandeau bandeau bandeau"
-      "menu-haut contenu bloc-news"
-      "menu-bas pied-de-page pied-de-page";
-    height: 100vh;
-  }
+      "menuhaut contenu contenu"
+      "menubas contenu contenu"
+      "pieddepage pieddepage pieddepage";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto 1fr 1fr auto;
+  height: 100vh;
+}
 
-  .bandeau {
-    grid-area: bandeau;
-    background-color: deepskyblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.bandeau {
+  grid-area: bandeau;
+  background-color: rgb(5, 54, 18);
+  padding: 20px;
+  text-align: center;
+}
 
-  .menu-haut {
-    grid-area: menu-haut;
-    background-color: yellowgreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.menu-haut {
+  grid-area: menuhaut;
+  background-color: rgb(255, 32, 255);
+  padding: 20px;
+}
 
-  .contenu {
-    grid-area: contenu;
-    background-color: gold;
-    padding: 96px;
-    width: 100%;
-    text-align: center;
-    position:static;
-    overflow-y: auto;
-  }
+.menu-bas {
+  grid-area: menubas;
+  background-color: rgb(104, 0, 16);
+  padding: 20px;
+}
 
-  .bloc-news {
-    grid-area: bloc-news;
-    background-color: orangered;
-    display: flex;
-    width: 100%;
-    height: 30%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.contenu {
+  grid-area: contenu;
+  background-color: rgb(17, 117, 156);
+  width: 100%;
+}
 
-  .menu-bas {
-    grid-area: menu-bas;
-    background-color: rgb(16, 54, 97);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.bloc-news {
+  float: right;
+  background-color: rgb(255, 165, 0);
+  padding: 20px;
+  height: 150px;
+  width: 150px;
 
-  .pied-de-page {
-    grid-area: pied-de-page;
-    background-color: mediumspringgreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
+.pied-de-page {
+  grid-area: pieddepage;
+  background-color: rgb(101, 69, 187);
+  padding: 20px;
+  text-align: center;
+}
