@@ -41,7 +41,7 @@ body {
 
 .contenu {
   grid-area: contenu;
-  background-color: rgb(17, 117, 156);
+  background-color: rgb(255, 224, 86);
   width: 100%;
 }
 
