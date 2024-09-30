@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas: 
+        "bandeau bandeau bandeau"
+        "menuhaut contenu contenu"
+        "menubas contenu contenu"
+        "pieddepage pieddepage pieddepage";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    height: 100vh;
+  }
+  
+  .bandeau {
+    grid-area: bandeau;
+    background-color: rgb(5, 54, 18);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .menu-haut {
+    grid-area: menuhaut;
+    background-color: rgb(255, 32, 255);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .menu-bas {
+    grid-area: menubas;
+    background-color: rgb(104, 0, 16);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contenu {
+    grid-area: contenu;
+    background-color: rgb(255, 224, 86);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .bloc-news {
+    float: right;
+    background-color: rgb(255, 165, 0);
+    padding: 20px;
+    height: 150px;
+    width: 150px;
+  
+  }
+  .pied-de-page {
+    grid-area: pieddepage;
+    background-color: rgb(101, 69, 187);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .blue-text {
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+  }
+  
